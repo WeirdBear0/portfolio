@@ -1,0 +1,116 @@
+:root{
+
+    --animate-speed:1s;
+
+}
+body{
+    margin: auto;
+}
+a{
+    color:#E5E7E7;
+    text-decoration: none;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    margin: auto;
+}
+.container h3{
+    color: #E5E7E7;
+    margin: auto;
+}
+#menu{
+    background:#043442;
+    position:sticky;
+    top:0;
+    z-index:2;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+#menu .container{
+    display:grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding:1rem;
+    align-items: center;
+    margin: auto;
+}
+#menu ul{
+    display:flex;
+    justify-self: end;
+    margin: auto;
+}
+#menu ul li a{
+    padding: 0.75rem;
+    font-weight:bold;
+    margin: auto;
+}
+#menu ul li a.current{
+    background: chocolate;
+    color:white;
+    margin: auto;
+}
+#menu ul li a:hover{
+    animation: colorChange var(--animate-speed) ease-in-out;
+    background:white;
+    color:#043442;
+    margin: auto;
+}
+
+@keyframes colorChange{
+    0%{color:white;}
+    100%{color: #043442;}
+}
+#banner{
+    height: 94.5vh;
+    background: url("https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/coding-vs-programming-2.jpg")no-repeat center center/cover;
+    margin: auto;
+}
+#banner .content{
+    color:white;
+    margin:auto;
+    animation: fadein ease 3s; 
+}
+#banner .content h1{
+    font-size:100px;
+    padding-top:19%;
+    padding-left:10%;
+    transform: translateY(10px);
+    animation: slightUp var(--animate-speed) forwards ease-in-out;
+    margin: auto;
+}
+#banner .content p{
+    font-size:20px;
+    padding-left: 10.5%;
+    transform: translateY(10px);
+    animation: slightUp var(--animate-speed) forwards ease-in-out;
+    margin: auto;
+}
+#banner .content .btn{
+    padding-left:10.5%;
+    padding-top:0.7%;
+    transform: translateY(10px);
+    animation: slightUp var(--animate-speed) forwards ease-in-out;
+    margin: auto;
+}
+#banner .content .btn button{
+    box-shadow: 3px 1.8px 10px white;
+    border:none;
+    border-radius: 5px;
+    margin: auto;
+}
+#banner .content .btn button a{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;    
+    margin: auto;
+}
+@keyframes fadein { 
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes slightUp{
+    to{
+        transform:translateX(0);
+    }
+}

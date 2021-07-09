@@ -1,0 +1,107 @@
+
+#banner-projects{
+    height: 20vh;
+    background: rgba(58, 58, 143, 0.459);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+#banner-projects .content{
+    padding-top: 2.3%;
+    width: 70vh;
+    margin: auto;
+}
+#banner-projects .content h2{
+    font-size: 40px;
+    margin: auto;
+}
+#banner-projects .content p{
+    margin-top: 6px;
+    font-size: 18px;
+    margin: auto;
+}
+#projects-display{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+#projects-display .project{
+    position: relative;
+    width: 790px;
+    margin: auto;
+    margin-top:50px;
+    border: 5px solid black;
+    font-family: 'Montserrat', sans-serif;
+    flex: 0 0 45%;
+    overflow: hidden;
+}
+#projects-display .project .video{
+    width:790px;
+    height: 462px;
+    transition: width 0.72s, height 0.72s;
+    margin: auto;
+}
+#projects-display .project .video:hover{
+    width:880px;
+    height: 508.2px;
+    margin: auto;
+}
+#projects-display .project .overlay{
+    width: 80%;
+    margin: auto;
+}
+#projects-display .project .overlay .title{
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: auto;
+}
+#projects-display .project .overlay .desc a{
+    color:blue;
+    display: block;
+    margin: auto;
+}
+/* #projects-display .project .video{
+    display: block;
+    width:100%;
+    z-index: 3;
+}
+#projects-display .project .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.3);
+    color:#ffffff;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.32s;
+    z-index:2;
+}
+#projects-display .project .overlay > * {
+    transform: translateY(40px);
+    transition: transform 0.32s;
+}
+#projects-display .project .overlay:hover{
+    opacity:1
+}
+#projects-display .project .overlay:hover > *{
+    transform: translateY(0);
+}
+#projects-display .project .overlay .title{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom:0.1em;
+}
+#projects-display .project .overlay .desc{
+    font-size: 1.25em;
+    margin-top:0.08em;
+} */
